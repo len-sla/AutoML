@@ -1,0 +1,383 @@
+{
+    "fit_level": "finished",
+    "time_controller": {
+        "total_time_limit": 3600,
+        "model_time_limit": null,
+        "steps": [
+            "simple_algorithms",
+            "default_algorithms",
+            "ensemble"
+        ],
+        "algorithms": [
+            "Baseline",
+            "Decision Tree",
+            "Random Forest",
+            "Xgboost",
+            "Neural Network"
+        ],
+        "spend": [
+            {
+                "model_name": "prepare_data",
+                "model_type": "prepare_data",
+                "fit_level": "prepare_data",
+                "train_time": 34.924633502960205
+            },
+            {
+                "model_name": "1_Baseline",
+                "model_type": "Baseline",
+                "fit_level": "simple_algorithms",
+                "train_time": 1.4959158897399902
+            },
+            {
+                "model_name": "2_DecisionTree",
+                "model_type": "Decision Tree",
+                "fit_level": "simple_algorithms",
+                "train_time": 20.679036378860474
+            },
+            {
+                "model_name": "3_Default_Xgboost",
+                "model_type": "Xgboost",
+                "fit_level": "default_algorithms",
+                "train_time": 25.88233971595764
+            },
+            {
+                "model_name": "4_Default_NeuralNetwork",
+                "model_type": "Neural Network",
+                "fit_level": "default_algorithms",
+                "train_time": 7.460885763168335
+            },
+            {
+                "model_name": "5_Default_RandomForest",
+                "model_type": "Random Forest",
+                "fit_level": "default_algorithms",
+                "train_time": 36.310526609420776
+            },
+            {
+                "model_name": "Ensemble",
+                "model_type": "Ensemble",
+                "fit_level": "ensemble",
+                "train_time": 1.5277066230773926
+            }
+        ],
+        "is_hill_climbing": false,
+        "is_stacking": false
+    },
+    "all_params": {
+        "simple_algorithms": [
+            {
+                "additional": {
+                    "max_steps": 1,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {},
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "X_path": "AutoML_5/X.data",
+                    "y_path": "AutoML_5/y.data",
+                    "results_path": "AutoML_5"
+                },
+                "learner": {
+                    "model_type": "Baseline",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1235,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 2,
+                "name": "1_Baseline",
+                "status": "trained",
+                "final_loss": 0.22559204901276173,
+                "train_time": 2.6792497634887695,
+                "data_type": "original",
+                "max_time_for_learner": 360.0
+            },
+            {
+                "additional": {
+                    "trees_in_step": 1,
+                    "train_cant_improve_limit": 0,
+                    "max_steps": 1,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {},
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "X_path": "AutoML_5/X.data",
+                    "y_path": "AutoML_5/y.data",
+                    "results_path": "AutoML_5"
+                },
+                "learner": {
+                    "model_type": "Decision Tree",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1235,
+                    "criterion": "mse",
+                    "max_depth": 3,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 2,
+                "name": "2_DecisionTree",
+                "status": "trained",
+                "final_loss": 0.1868642812897327,
+                "train_time": 21.440228700637817,
+                "data_type": "original",
+                "max_time_for_learner": 360.0
+            }
+        ],
+        "default_algorithms": [
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {},
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "scale_normal"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "X_path": "AutoML_5/X.data",
+                    "y_path": "AutoML_5/y.data",
+                    "results_path": "AutoML_5"
+                },
+                "learner": {
+                    "model_type": "Xgboost",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "objective": "reg:squarederror",
+                    "eta": 0.075,
+                    "max_depth": 6,
+                    "min_child_weight": 1,
+                    "subsample": 1.0,
+                    "colsample_bytree": 1.0,
+                    "seed": 3,
+                    "eval_metric": "mae",
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 2,
+                "name": "3_Default_Xgboost",
+                "status": "trained",
+                "final_loss": 0.11121649156131906,
+                "train_time": 29.30271577835083,
+                "data_type": "original",
+                "max_time_for_learner": 360.0
+            },
+            {
+                "additional": {
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "Unnamed: 0_cat": [
+                            "scale_normal"
+                        ],
+                        "Security:_cat": [
+                            "scale_normal"
+                        ],
+                        "Building type:_cat": [
+                            "scale_normal"
+                        ],
+                        "Ad type:_cat": [
+                            "scale_normal"
+                        ],
+                        "Construction phase:_cat": [
+                            "scale_normal"
+                        ],
+                        "Housing class:_cat": [
+                            "scale_normal"
+                        ],
+                        "Bathroom type:_cat": [
+                            "scale_normal"
+                        ],
+                        "Balcony type:_cat": [
+                            "scale_normal"
+                        ],
+                        "Mortgage possible:_cat": [
+                            "scale_normal"
+                        ],
+                        "The view from the window:_cat": [
+                            "scale_normal"
+                        ],
+                        "Garbage chute:_cat": [
+                            "scale_normal"
+                        ],
+                        "Repair:_cat": [
+                            "scale_normal"
+                        ],
+                        "Fridge:_cat": [
+                            "scale_normal"
+                        ],
+                        "Phone:_cat": [
+                            "scale_normal"
+                        ],
+                        "Furniture:_cat": [
+                            "scale_normal"
+                        ],
+                        "Free layout:_cat": [
+                            "scale_normal"
+                        ],
+                        "It is possible to bargain:_cat": [
+                            "scale_normal"
+                        ],
+                        "Floor covering:_cat": [
+                            "scale_normal"
+                        ],
+                        "Room type:_cat": [
+                            "scale_normal"
+                        ],
+                        "Internet:_cat": [
+                            "scale_normal"
+                        ],
+                        "Kitchen furniture:_cat": [
+                            "scale_normal"
+                        ],
+                        "TV:_cat": [
+                            "scale_normal"
+                        ],
+                        "Washing machine:_cat": [
+                            "scale_normal"
+                        ],
+                        "Foundation type:_cat": [
+                            "scale_normal"
+                        ],
+                        "Overlap type:_cat": [
+                            "scale_normal"
+                        ],
+                        "Type of the building:_cat": [
+                            "scale_normal"
+                        ],
+                        "Playground:_cat": [
+                            "scale_normal"
+                        ],
+                        "Class:_cat": [
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "scale_normal"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "X_path": "AutoML_5/X.data",
+                    "y_path": "AutoML_5/y.data",
+                    "results_path": "AutoML_5"
+                },
+                "learner": {
+                    "model_type": "Neural Network",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "dense_1_size": 32,
+                    "dense_2_size": 16,
+                    "learning_rate": 0.05,
+                    "seed": 4,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 2,
+                "name": "4_Default_NeuralNetwork",
+                "status": "trained",
+                "final_loss": 0.136116548761331,
+                "train_time": 9.676450490951538,
+                "data_type": "original",
+                "max_time_for_learner": 360.0
+            },
+            {
+                "additional": {
+                    "trees_in_step": 100,
+                    "train_cant_improve_limit": 1,
+                    "min_steps": 1,
+                    "max_steps": 50,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {},
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "scale_normal"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "X_path": "AutoML_5/X.data",
+                    "y_path": "AutoML_5/y.data",
+                    "results_path": "AutoML_5"
+                },
+                "learner": {
+                    "model_type": "Random Forest",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "criterion": "mse",
+                    "max_features": 0.9,
+                    "min_samples_split": 30,
+                    "max_depth": 4,
+                    "seed": 5,
+                    "eval_metric_name": "mae",
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 2,
+                "name": "5_Default_RandomForest",
+                "status": "trained",
+                "final_loss": 0.1624303259367733,
+                "train_time": 39.82374596595764,
+                "data_type": "original",
+                "max_time_for_learner": 360.0
+            }
+        ],
+        "ensemble": [
+            {
+                "model_type": "ensemble",
+                "is_stacked": false,
+                "name": "Ensemble",
+                "status": "trained",
+                "final_loss": 0.11121649156131906,
+                "train_time": 1.5277066230773926
+            }
+        ]
+    },
+    "adjust_validation": false
+}

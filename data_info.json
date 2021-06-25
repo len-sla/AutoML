@@ -1,0 +1,132 @@
+{
+    "columns": [
+        "Unnamed: 0_cat",
+        "Security:_cat",
+        "Building type:_cat",
+        "Object type:_cat",
+        "Ad type:_cat",
+        "Commission agent:_cat",
+        "Construction phase:_cat",
+        "Housing class:_cat",
+        "Elevator:_cat",
+        "Bathroom type:_cat",
+        "Balcony type:_cat",
+        "Mortgage possible:_cat",
+        "The view from the window:_cat",
+        "Garbage chute:_cat",
+        "Repair:_cat",
+        "Fridge:_cat",
+        "Phone:_cat",
+        "Furniture:_cat",
+        "Free layout:_cat",
+        "It is possible to bargain:_cat",
+        "Floor covering:_cat",
+        "Room type:_cat",
+        "Internet:_cat",
+        "Kitchen furniture:_cat",
+        "TV:_cat",
+        "Washing machine:_cat",
+        "Foundation type:_cat",
+        "Overlap type:_cat",
+        "Type of the building:_cat",
+        "Playground:_cat",
+        "Class:_cat"
+    ],
+    "rows": 34270,
+    "cols": 31,
+    "target_is_numeric": true,
+    "columns_info": {
+        "Unnamed: 0_cat": [
+            "scale"
+        ],
+        "Security:_cat": [
+            "scale"
+        ],
+        "Building type:_cat": [
+            "scale"
+        ],
+        "Object type:_cat": [],
+        "Ad type:_cat": [
+            "scale"
+        ],
+        "Commission agent:_cat": [],
+        "Construction phase:_cat": [
+            "scale"
+        ],
+        "Housing class:_cat": [
+            "scale"
+        ],
+        "Elevator:_cat": [],
+        "Bathroom type:_cat": [
+            "scale"
+        ],
+        "Balcony type:_cat": [
+            "scale"
+        ],
+        "Mortgage possible:_cat": [
+            "scale"
+        ],
+        "The view from the window:_cat": [
+            "scale"
+        ],
+        "Garbage chute:_cat": [
+            "scale"
+        ],
+        "Repair:_cat": [
+            "scale"
+        ],
+        "Fridge:_cat": [
+            "scale"
+        ],
+        "Phone:_cat": [
+            "scale"
+        ],
+        "Furniture:_cat": [
+            "scale"
+        ],
+        "Free layout:_cat": [
+            "scale"
+        ],
+        "It is possible to bargain:_cat": [
+            "scale"
+        ],
+        "Floor covering:_cat": [
+            "scale"
+        ],
+        "Room type:_cat": [
+            "scale"
+        ],
+        "Internet:_cat": [
+            "scale"
+        ],
+        "Kitchen furniture:_cat": [
+            "scale"
+        ],
+        "TV:_cat": [
+            "scale"
+        ],
+        "Washing machine:_cat": [
+            "scale"
+        ],
+        "Foundation type:_cat": [
+            "scale"
+        ],
+        "Overlap type:_cat": [
+            "scale"
+        ],
+        "Type of the building:_cat": [
+            "scale"
+        ],
+        "Playground:_cat": [
+            "scale"
+        ],
+        "Class:_cat": [
+            "scale"
+        ]
+    },
+    "target_info": [
+        "scale"
+    ],
+    "n_features": 31,
+    "is_sample_weighted": false
+}
