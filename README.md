@@ -3,8 +3,8 @@
 ---
 
 
-<p>If someone is looking for ready to use/easy to install( here on lubuntu) automatised ml package for analysis of tabular data 
-this is an excellent choice.<br> I am really impressed by way of presenting and storage results by package.<br> 
+<p>If someone is looking for ready to use, easy to install( here on lubuntu) automatised ml package for analysis of tabular data 
+this is an excellent choice.<br> I am really impressed by way of presenting and storage results by mentioned package.<br> 
 To check and play input data with Moskow flat prices were used.<br>  Typical example for regresion to evaluate the price
 metric mae.
 
